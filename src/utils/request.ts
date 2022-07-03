@@ -10,7 +10,7 @@ instance.interceptors.request.use(
     return config
   },
   (err) => {
-    console.log(err)
+    return err
   },
 )
 
@@ -34,7 +34,6 @@ instance.interceptors.response.use(
     }
   },
   (err) => {
-    // 网络错误 登出用户
     return Promise.reject(err || 'Error')
   },
 )

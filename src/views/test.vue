@@ -22,7 +22,7 @@ const { doubleCount } = storeToRefs(countStore)
       <br>
       <span>双倍数值{{ doubleCount }}</span>
       <br>
-      <button class="w-full bg-[#ccc]" @click="countStore.countAdd">
+      <button class="w-full bg-[#824545]" @click="countStore.countAdd">
         +1
       </button>
       <button class="w-full bg-sky-500" @click="countStore.countReduce">
